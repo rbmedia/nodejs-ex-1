@@ -77,7 +77,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test', function (req, res) {
-  // try to initialize the db on every request if it's not already
+  // try to initialize the db on every request if it's not already (not working)
   // initialized.
   if (!db) {
     initDb(function(err){});
